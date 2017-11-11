@@ -47,10 +47,11 @@ URL lengths predictable and shorter:
   iptables -A OUTPUT -p tcp --tcp-flags SYN,RST SYN --sport 21 -j TCPMSS --set-mss 536
 
 This should be obvious, but this script listens on port 21, meaning it
-needs root privileges.  This script requires you to supply the internal
-IP address of the victim.  This is very easy to get, most of the time,
-by forcing the victim to connect via an FTP URL to a non-FTP port.  See
-the above article for some more details.
+needs root privileges or to have that port redirected to it.  This
+script requires you to supply the internal IP address of the victim.
+This is very easy to get, most of the time, by forcing the victim to
+connect via an FTP URL to a non-FTP port.  See the above article for
+some more details.
 """
 
 parser = argparse.ArgumentParser(description=overview, formatter_class=argparse.RawTextHelpFormatter)
