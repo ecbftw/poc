@@ -10,6 +10,10 @@
 # Distribution of derivative works is permitted, provided the above
 # restrictions are retained.
 #
+# For more information on this script, please see:
+#  https://summitinfosec.com/2017/12/19/advanced-sql-server-mitm-attacks/
+#  http://blog.blindspotsecurity.com/2017/12/advanced-sql-server-mitm-attacks.html
+#
 
 import sys
 import os
